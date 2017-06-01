@@ -12,6 +12,10 @@
 * James Strawson - 2016
 *******************************************************************************/
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define _GNU_SOURCE  // to enable macros in pthread
 
 #ifndef USEFUL_INCLUDES
@@ -58,3 +62,7 @@
 #define min(a, b) 	((a < b) ? a : b)
 
 #endif // USEFUL_INCLUDES
+
+#ifdef __cplusplus
+}
+#endif
