@@ -6,7 +6,7 @@
 * in their projects to clean up what would otherwise be a cluttered list of 
 * includes at the top of their own program.
 *
-* We recommended including this BEFORE robotics_cape.h to make sure _GNU_SOURCE
+* We recommended including this BEFORE roboticscape.h to make sure _GNU_SOURCE
 * is the first include, otherwise macros may not work.
 *
 * James Strawson - 2016
@@ -16,7 +16,9 @@
 extern "C" {
 #endif
 
+#ifndef _GNU_SOURCE
 #define _GNU_SOURCE  // to enable macros in pthread
+#endif // _GNU_SOURCE
 
 #ifndef USEFUL_INCLUDES
 #define USEFUL_INCLUDES
